@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Documento elaborado por Fernando Rodríguez Medel-->
+<!--------Laboratorio de Programación web------------->
+<!---Sitio Web responsivo, semántico y responsable---->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Jack-o</title>
+    <!--Enlace a hoja de estilos-->
+    <link rel="stylesheet" href="Recursos\stylesheet.css">
+</head>
+
+<body>
+    <!--Encabezado de la página-->
+    <header>
+        <!--Contenedor principal del encabezado, necesario para el acomodo de elementos-->
+        <div class="header">
+            <img src="Recursos\Logo.png" alt="Logo de la cafetería Jack-o" width="30%" height="30%">
+
+            <!--Etiqueta nav para indicarle al navegador la presencia de enlaces importantes-->
+            <nav>
+            <!--Sección indice para el acomodo de botones-->
+                <section id="indice" class="indice">
+                    <!--Enlaces a cada sección-->
+                    <div class="boton"><a href="#inicio">Inicio</a></div>
+                    <div class="boton"><a href="#productos">Productos</a></div>
+                    <div class="boton"><a href="#promociones">Promociones</a></div>
+                    <div class="boton"><a href="#encuesta">Encuesta</a></div>
+                    <div class="boton"><a href="#contacto">Contacto</a></div>
+                </section>
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+<!--Contenedor padre, necesario para combinar acomodo de flex con grid-->
+<div class="contenedor-padre">
+
+    <!--Sección de inicio, se muestra información básica de la página-->
+    <section id="inicio" class="inicio">
+        <div class="doble">
+            <div class="izquierdo">
+        
+            <p>
+                <h2>Te estamos esperando en nuestra cafetería</h2>
+            </p>        
+            <p>
+                <h3>La cafetería Jack-o abrirá sus puertas este 25 de Noviembre de 2026.</h3>
+            </p>
+
+            <p>
+            Nuestra cafetería se especializa en cafés de temporada invernal, ofrecemos un
+            ambiente hogareño y calido así como excelente atención al cliente.
+            </p>
+
+            </div>
+
+            <div class="derecho">
+
+            <img src="Recursos\Cafetería.jpg" alt="Fotografía de la cafetería">
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!--Sección de productos, se mostrará los productos de la cafetería-->
+    <section id="productos" class="productos">
+        <h2>Conoce nuestra variedad de cafés</h2>
+        <div class="cafes">
+
+            <div class="cafe1">
+                <img src="Recursos\cafe1.png" alt="café Irlandés" width="50%">
+                <p>
+                    <h3>Café Irlandés</h3>
+                </p>
+                <p>Este café está pensado para nuestro público adulto, combina el sabor del café con lo suave
+                    y dulce del whisky Irlandés.
+                </p>
+            </div>
+
+            <div class="cafe2">
+                <img src="Recursos\cafe2.png" alt="Mocha caliente" width="50%">
+                <p>
+                    <h3>Mocha Caliente</h3>
+                </p>
+                <p>
+                    Nuestro Mocha caliente le trae a nuestros clientes la clásica combinación entre chocolate 
+                    y café caliente que nunca pasa de moda. Excelente para los amantes del chocolate.
+                </p>
+            </div>
+
+            <div class="cafe3">
+                <img src="Recursos\cafe3.png" alt="Latte de caramelo dulce" width="50%">
+                <p>
+                    <h3>Latte de caramelo salado</h3>
+                </p>
+                <p>
+                    Perfecta combinación entre lo dulce y lo salado, nuestro latte de caramelo salado es una
+                    experiencia gourmet.
+                </p>
+
+            </div>
+                        
+            <div class="cafe3">
+                <img src="Recursos\cafe4.png" alt="café vienés" width="50%">
+                <p>
+                    <h3>Café Vienés</h3>
+                </p>
+                <p>
+                    El café vienés es una deliciosa creación que combina café, crema batida y chocolate rallado,
+                    esta deliciosa bebida tradicional de Viena es una excelente elección para esta temporada de 
+                    invierno.
+                </p>
+            </div>
+
+            <div class="cafe2">
+                <img src="Recursos\cafe5.png" alt="mokaccino" width="50%">
+                <p>
+                    <h3>Mokaccino</h3>
+                </p>
+                <p>
+                    Esta popular bebida que combina espresso, leche vaporizada y jarabe o salsa de chocolate, a
+                    elección del cliente, ofrece un balance entre el amargor del café y la dulzura del chocolate
+                    con una textura espumosa y cremosa.
+                </p>
+            </div>
+
+            <div class="cafe1">
+                <img src="Recursos\cafe6.png" alt="café Irlandés" width="50%">
+                <p>
+                    <h3>Café Bombón</h3>
+                </p>
+                <p>
+                    Nuestro café bombón, trae la destacada bebida española a territorio mexicano, destaca por combinar
+                    la intensidad del café espresso con el dulzor de la leche condensada a aquellos que buscan una
+                    con sabor a postre.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Sección de promociones-->
+    <section id="promociones" class="promociones">
+        <p>
+            <h2>¡PROMOCIÓN DE APERTURA!</h2>
+        </p>
+        <p>
+            Trae a tu pareja o amigos a la apertura de nuestra cafetería este <em> 25 DE NOVIEMBRE </em> y ambos se
+            llevan 1 postre de nuestro menú a su elección además de un descuento del 50% en la compra de su próximo café.
+        </p>
+        <img src="Recursos/convivencia.png" alt="Ven a acompañarnos este 25 de noviembre" width="100%">
+    </section>
+    
+    <!--Sección de encuesta de satisfacción de usuario-->
+    <section id="encuesta" class="encuesta">
+        <p>
+            <h2>¿Ya visitaste nuestra cafetería? Calificanos</h2>
+        </p>
+    <!--Instrucciones del formulario-->
+        <p>
+            Por favor, conteste las preguntas que se solicitan a continuación para obtener un cupón de descuento:
+        </p>
+    
+    <!--Inicio del campo del formulario, al finalizar se reenviará al índice-->
+    <!--Esta práctica de laboratorio no contempla el almacenar las respuestas del formulario-->
+        <form method="post" action="index.html">
+
+            <!--Solicita Nombre con la etiqueta <input name=> establece un tamaño de letra y limite de-->
+            <!--carácteres, además establece que es necesario llenar dicho campo-->
+            <p> 
+                <label> Nombre: <input name="nombre" id="nombre" type="text" size="25" maxlength="30" required> </label>
+            </p>
+
+            <!--Solicita Apellidos con la etiqueta <input name=> establece un tamaño de letra y limite de-->
+            <!--carácteres, además establece que es necesario llenar dicho campo-->
+            <p> 
+                <label> Apellidos: <input name="apellidos" id="apellidos" type="text" size="25" maxlength="40" required> </label>
+            </p>
+
+            <!--Solicita Correo con la etiqueta <input name=> establece un tamaño de letra y limite de-->
+            <!--carácteres, además establece que es necesario llenar dicho campo.-->
+            <!--Adicionalmente muestra un ejemplo de como llenar el campo.-->
+            <p> <label> Correo electrónico: 
+                <input name="email" id="email" type="email" size="25" maxlength="30" required placeholder="direccion@dominio.com"> 
+            </label></p>
+                <p> 
+                    <label> ¿Cuál fué tu experiencia en nuestro local?
+                    <!--Para esta pregunta se da una serie de respuestas por medio de la etiqueta <select>-->
+                    <select name="calificacion" id="calificacion" required>
+                        <!--Opción predeterminada deshabilitada y oculta para el usuario al contestar-->
+                        <option disabled selected hidden>Selecciona una opción</option>
+                        <!--Serie de respuestas posibles a la pregunta opcional-->
+                        <option>Muy buena</option>
+                        <option>Buena</option>
+                        <option>Regular</option>
+                        <option>Mala</option>
+                    </select> 
+                    </label>
+                </p>
+            <p> <label for="comentarios"> Comentarios: </label>
+                <p>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="40"
+                    minlength="10" maxlength="150" required placeholder="Escribe aquí tu opinión..."></textarea>
+                </p>
+            </p>
+            <!--Botones para enviar o eliminar las respuestas del formulario-->
+            <p>
+            <!--Botón para subir las respuestas y reenviar al usuario a la página principal-->
+                <input type="submit" value="Enviar cuestionario">
+            <!--Botón para borrar las opciones del formulario-->
+                <input type="reset" value="Borrar respuestas">
+            </p>
+ 
+            </form>
+    </section>
+    
+    <!--Pie de página del sitio web-->
+    <footer>
+        <section id="contacto" class="contacto">
+            <h2>Contactanos</h2>
+            <div class="contenedor-padre"></div>
+                
+                <div class="doble">
+                    <div class="izquierdo">
+                        <p>
+                            <h3>Dirección:</h3>
+                        </p>
+                        <p>
+                        Calle y Número: Av. Benito Juárez 123
+                        <br>Colonia: Centro
+                        <br>Municipio/Alcaldía: Cuauhtémoc
+                        <br>Ciudad/Estado: Ciudad de México (CDMX)
+                        <br>Código Postal: 06000
+                        <br>País: México
+                        </p>
+                    </div>
+                    <div class="derecho">
+                        <p>
+                            <h3>Redes Sociales:</h3>
+                        </p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/accounts/login/">Instagram</a></li>
+                            <li><a href="https://x.com/iniciarsesion?lang=es">X / Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+        </section>
+    </footer>    
+
+</div>
+
+</body>
+
+</html>
