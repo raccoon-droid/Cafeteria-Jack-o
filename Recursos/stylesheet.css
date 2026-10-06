@@ -1,0 +1,152 @@
+/*Estilos generales para el cuerpo de la página, se cambia el color del fondo y la fuente*/
+body{
+    background-color: #1b2941;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/*Estilo aplicado al encabezado, se encarga de acomodar el espacio entre el logo y los botones*/
+.header{
+
+    /*Se aplica la propiedad flex para darle más libertad de acomodo al encabezado*/
+    display: flex;
+    /*Se alienea al centro y se pide que se use todo el espacio*/
+    justify-content: space-around;
+    align-items: center;
+    background-color: #679ebb;
+    
+}
+.indice{
+
+    /*Acomodo de los botones del encabezado por flex, se asigna dirección (flex direction) y espacio entre botones (gap)*/
+    display: flex;
+    min-height: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.boton{
+    
+    /*Se declara la propiedad de color a los hipervinculos presentes en pantalla*/
+    a{
+    color: #20314e;
+    }
+    
+    /*Se declara el tamaño de letra (font-size) y que esté centrada dentro del contenedor (text-align)*/
+    font-size: larger;
+    text-align: center;
+    width: 10dvw;
+    height: auto;
+    
+    /*Se declara propiedades para el borde del botón*/
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #20314e;
+
+    background-color: #76bee0;
+
+    /*propiedades para las animaciones aplicadas al botón*/
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/*Animaciones aplicadas a los botones al momento de posicionar el mouse encima del mismo*/
+.boton:hover {
+
+  background-color: #a5d2ef;
+    box-shadow: 
+    0 0 10px #104C65,
+    0 0 30px #24A4DB,
+    0 0 60px #84CCEB;
+}
+.contenedor-padre {
+  display: flex;
+  flex-direction: column; /* Apila las secciones verticalmente */
+  gap: 10px;              /* Separa las secciones de forma exacta con 20px */
+}
+
+/*contenedor utilizado para secciones con dos columnas de elementos*/
+.doble{
+    padding: 10px;
+    display: grid;
+    grid-gap: 10dvw;
+    grid-template-columns: auto auto;
+}
+
+/*Contenedor utilizado para la sección de productos con tres columnas de elementos*/
+.cafes{
+
+    padding: 10px;
+    display: grid;
+    grid-gap: 2dvw;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/*Contenedor de inicio, se aplicaron estilos para encabezados, color de fondo y posición*/
+.inicio{
+    h2{ 
+        text-align: center;
+        color: #7fbed9;
+    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#346fa2;
+}
+
+/*Contenedores de productos, se aplicaron estilos para encabezados, color de fondo y posición*/
+/*Contenedor principal de la sección*/
+.productos{
+    h2{
+        color: #0c0100;
+    }
+    text-align: center;
+    background-color:#4a3022;
+}
+/*Contenedores individuales, 3 estilos diferentes para 6 elementos*/
+.cafe1{
+    background-color:#e6d3c2;
+}
+
+.cafe2{
+    background-color:#b8947a;
+}
+
+.cafe3{
+    background-color:#7a5744;
+}
+
+/*Contenedor de promociones, se aplicaron estilos para encabezados, color de fondo y posición*/
+.promociones{
+    h2{ 
+        text-align: center;
+        color: #7fbed9;
+    }
+    background-color: #346fa2;
+}
+
+/*Contenedor de encuesta, se aplicaron estilos para encabezados, color de fondo y posición*/
+.encuesta{
+    h2{ 
+        text-align: center;
+        color: #0e1c4a;
+    }
+    background-color: #679ebb;
+}
+
+/*Contenedor de contacto, se aplicaron estilos para encabezados, color de fondo y posición*/
+.contacto{
+    h2{
+        text-align: center;
+        color: #7fbed9;
+    }
+    h3{
+        color: #7fbed9;
+    }
+    a{
+        color: #7fbed9;
+    }
+    color: white;
+}
